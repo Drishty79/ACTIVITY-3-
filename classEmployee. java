@@ -1,0 +1,136 @@
+public class Employee {
+    private String name;
+    private int employeeID;
+    private double salary;
+
+    // Parameterized constructor
+    public Employee(String name, int employeeID, double salary) {
+        this.name = name;
+        this.employeeID = employeeID;
+        this.salary = salary;
+    }
+
+    // Getter and setter methods for name
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter and setter methods for employeeID
+    public int getEmployeeID() {
+        return employeeID;
+    }
+
+    public void setEmployeeID(int employeeID) {
+        this.employeeID = employeeID;
+    }
+
+    // Getter and setter methods for salary
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    // Method to increase salary by a certain percentage
+    public void increaseSalary(double percentage) {
+        this.salary *= (1 + percentage / 100);
+    }
+
+    // Method to display employee information
+    public void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Employee ID: " + employeeID);
+        System.out.println("Salary: $" + salary);
+    }
+
+    public static void main(String[] args) {
+        // Create an Employee object using parameterized constructor
+        Employee emp1 = new Employee("John Doe", 1001, 50000);
+
+        // Display employee information
+        emp1.displayInfo();
+
+        // Change employee name
+        emp1.setName("Jane Smith");
+
+        // Increase employee salary by 10%
+        emp1.increaseSalary(10);
+
+        // Display updated employee information
+        emp1.displayInfo();
+    }
+}
+public class Employee {
+    private String name;
+    private int employeeID;
+    private double salary;
+
+    // Parameterized constructor
+    public Employee(String name, int employeeID, double salary) {
+        this.name = name;
+        this.employeeID = employeeID;
+        this.salary = salary;
+    }
+
+    // Getter and setter methods for name
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter and setter methods for employeeID
+    public int getEmployeeID() {
+        return employeeID;
+    }
+
+    public void setEmployeeID(int employeeID) {
+        this.employeeID = employeeID;
+    }
+
+    // Getter and setter methods for salary
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    // Method to increase salary by a certain percentage
+    public void increaseSalary(double percentage) {
+        this.salary *= (1 + percentage / 100);
+    }
+
+    // Method to display employee information
+    public void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Employee ID: " + employeeID);
+        System.out.println("Salary: $" + salary);
+    }
+
+    public static void main(String[] args) {
+        // Create an Employee object using parameterized constructor
+        Employee emp1 = new Employee("John Doe", 1001, 50000);
+
+        // Display employee information
+        emp1.displayInfo();
+
+        // Change employee name
+        emp1.setName("Jane Smith");
+
+        // Increase employee salary by 10%
+        emp1.increaseSalary(10);
+
+        // Display updated employee information
+        emp1.displayInfo();
+    }
+}
